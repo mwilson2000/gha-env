@@ -8,6 +8,7 @@ env:
   MONGODB_DB_NAME: gha-demo
 jobs:
   test:
+    environment: testing
     env: 
     # Per the instructor, we can skip this part instead of fully setting up a new mongo db.
       MONGODB_CLUSTER_ADDRESS: test
